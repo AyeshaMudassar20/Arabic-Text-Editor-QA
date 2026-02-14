@@ -1,11 +1,11 @@
 # 🎯 Assignment Completion Checklist
 
-## ✅ COMPLETED (67% Done - Ready for Submission!)
+## ✅ COMPLETED (75% Done - Ready for Submission!)
 
 ### 1. Repository & Version Control ✅
 
 - [x] GitHub repository created: https://github.com/AyeshaMudassar20/Arabic-Text-Editor-QA
-- [x] 7 commits pushed to master
+- [x] 9 commits pushed to master
 - [x] Proper commit messages following conventions
 - [x] .gitignore configured for Java projects
 
@@ -47,7 +47,26 @@
 - [x] Control Flow Graph (CFG) for SearchWord
   - Nodes: 11, Edges: 14
   - Cyclomatic Complexity: V(G) = 5
+  - 5 independent test paths
 - [x] Control Flow Graph (CFG) for Pagination
+  - Nodes: 10, Edges: 12
+  - Cyclomatic Complexity: V(G) = 4
+  - 4 independent test paths
+- [x] Control Flow Graph (CFG) for Auto-Save
+  - Nodes: 7, Edges: 8
+  - Cyclomatic Complexity: V(G) = 3
+  - 3 independent test paths
+- [x] **Professional Draw.io CFG diagrams created!**
+  - Multi-page diagram file (CFG_Diagrams.drawio)
+  - Color-coded nodes (decision=blue, process=yellow, entry/exit=green)
+  - Mathematical complexity calculations included
+  - Legend and annotations
+  - Ready for PNG/PDF export for Overleaf
+- [x] **CFG documentation created!**
+  - Complete usage guide (CFG_README.md)
+  - Export instructions for Overleaf
+  - LaTeX code snippets ready
+  - Test path coverage mapping
   - Nodes: 10, Edges: 12
   - Cyclomatic Complexity: V(G) = 4
 - [x] Test path sets documented
@@ -84,7 +103,31 @@
 
 ## ⏳ REMAINING TASKS (Manual Steps)
 
-### 1. Database Installation (15 minutes)
+### 1. Export CFG Diagrams (5 minutes) 🆕
+
+**Export diagrams for Overleaf:**
+
+```powershell
+# 1. Open CFG_Diagrams.drawio
+# - Option A: Install Draw.io Desktop from https://www.diagrams.net/
+# - Option B: Use app.diagrams.net online
+# - Option C: Use VS Code extension "Draw.io Integration"
+
+# 2. Export each page:
+# - File → Export as → PNG (or PDF)
+# - Transparent Background: OFF
+# - Border Width: 10
+# - Zoom: 100%
+
+# 3. Save as:
+# - SearchWord_CFG.png
+# - Pagination_CFG.png
+# - AutoSave_CFG.png
+
+# See CFG_README.md for detailed instructions
+```
+
+### 2. Database Installation (15 minutes)
 
 **You must do this manually:**
 
@@ -109,7 +152,7 @@ Copy-Item config.properties.example config.properties
 mvn test -Dtest=DatabaseConnectionTest
 ```
 
-### 2. GitHub Project Board (10 minutes)
+### 3. GitHub Project Board (10 minutes)
 
 **You must do this manually on GitHub.com:**
 
@@ -119,7 +162,7 @@ mvn test -Dtest=DatabaseConnectionTest
 4. Create columns: Backlog, To Do, In Progress, In Review, Done
 5. Create issues from GITHUB_PROJECT_SETUP.md templates
 
-### 3. Fix Compilation Errors (30 minutes)
+### 4. Fix Compilation Errors (30 minutes)
 
 **Run and fix any errors:**
 
@@ -134,20 +177,20 @@ mvn exec:java -Dexec.mainClass="pl.EditorPO"
 # 4. Test all features
 ```
 
-### 4. Overleaf Documentation (2-3 hours)
+### 5. Overleaf Documentation (2-3 hours)
 
 **Create LaTeX document with:**
 
 - [ ] Project introduction
 - [ ] Architecture diagram (3-layer)
-- [ ] CFG diagrams (Draw.io or Lucidchart)
-- [ ] Cyclomatic Complexity calculations
+- [ ] **CFG diagrams (READY in CFG_Diagrams.drawio - just export to PNG!)**
+- [ ] Cyclomatic Complexity calculations (formulas ready in CFG_README.md)
 - [ ] Test coverage tables
 - [ ] GitHub screenshots (commits, issues, PRs)
 - [ ] Bug fixes documentation
 - [ ] Conclusion
 
-**Template Structure:**
+**Template Structure (LaTeX code ready in CFG_README.md):**
 
 ```latex
 \documentclass{article}
@@ -188,15 +231,19 @@ $$V(G) = E - N + 2P$$
 | -------------------- | ------ | ---------- |
 | Repository Setup     | ✅     | 100%       |
 | Test Implementation  | ✅     | 67%        |
-| White-Box Analysis   | ✅     | 60%        |
+| White-Box Analysis   | ✅     | 100%       |
+| CFG Diagrams Created | ✅     | 100%       |
+| CFG Export to PNG    | ⏳     | 0%         |
 | Database Schema      | ✅     | 100%       |
 | GitHub Workflow Docs | ✅     | 100%       |
-| MariaDB Installation | ⏳     | 0%         |
+| MariaDB Installation | ⏳     | 50%\*      |
 | Project Board Setup  | ⏳     | 0%         |
 | Compilation Fixes    | ⏳     | 0%         |
 | Overleaf Document    | ⏳     | 0%         |
 
-**Overall Completion: ~67%**
+**Overall Completion: ~75%**
+
+_\*User is currently installing MariaDB_
 
 ---
 
