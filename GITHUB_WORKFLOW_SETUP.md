@@ -30,6 +30,7 @@ Add these columns to your project board:
 Go to **Issues** → **New Issue** and create these:
 
 ### Issue #1: Implement Business Layer Tests
+
 ```markdown
 **Title**: feat: Implement FacadeBO and EditorBO JUnit tests
 
@@ -37,6 +38,7 @@ Go to **Issues** → **New Issue** and create these:
 Create comprehensive JUnit test suites for Business Logic Layer components.
 
 **Tasks**:
+
 - [ ] Create FacadeBOTest.java with facade pattern tests
 - [ ] Create EditorBOTest.java with business logic tests
 - [ ] Include positive, negative, and boundary test cases
@@ -44,6 +46,7 @@ Create comprehensive JUnit test suites for Business Logic Layer components.
 - [ ] Achieve 80%+ code coverage
 
 **Acceptance Criteria**:
+
 - All tests pass successfully
 - Code coverage report generated
 - Tests follow AAA pattern
@@ -56,6 +59,7 @@ Create comprehensive JUnit test suites for Business Logic Layer components.
 ```
 
 ### Issue #2: Implement Presentation Layer Tests
+
 ```markdown
 **Title**: test: Add comprehensive UI and Presentation layer tests
 
@@ -63,6 +67,7 @@ Create comprehensive JUnit test suites for Business Logic Layer components.
 Implement JUnit tests for all Presentation Layer components including EditorPO, FileImporter, and SearchFrame.
 
 **Tasks**:
+
 - [ ] Create EditorPOTest.java with Auto-Save logic tests (>500 words)
 - [ ] Create FileImporterTest.java for import functionality
 - [ ] Create SearchFrameTest.java for search UI
@@ -70,6 +75,7 @@ Implement JUnit tests for all Presentation Layer components including EditorPO, 
 - [ ] Test exception handling in UI components
 
 **Notes**:
+
 - EditorPO contains Auto-Save trigger logic (word count > 500)
 - This is a critical feature for White-Box analysis
 
@@ -78,13 +84,15 @@ Implement JUnit tests for all Presentation Layer components including EditorPO, 
 ```
 
 ### Issue #3: Set Up MariaDB and Database Configuration
-```markdown
+
+````markdown
 **Title**: chore: Configure MariaDB database and test connection
 
 **Description**:
 Set up local MariaDB instance and configure database connection for the application.
 
 **Tasks**:
+
 - [ ] Install MariaDB 10.x or higher
 - [ ] Create `text_editor_db` database
 - [ ] Execute SQL schema from `resource/Database/EditorDBQuery.sql`
@@ -93,15 +101,18 @@ Set up local MariaDB instance and configure database connection for the applicat
 - [ ] Verify CRUD operations work
 
 **Database Setup Commands**:
+
 ```sql
 CREATE DATABASE text_editor_db;
 USE text_editor_db;
 -- Run EditorDBQuery.sql
 ```
+````
 
 **Labels**: `chore`, `database`, `configuration`
 **Priority**: High
-```
+
+````
 
 ### Issue #4: White-Box Analysis Documentation
 ```markdown
@@ -125,9 +136,10 @@ Create comprehensive documentation of CFG, Cyclomatic Complexity, and Test Paths
 - Overleaf for LaTeX documentation
 
 **Labels**: `documentation`, `white-box-testing`, `analysis`
-```
+````
 
 ### Issue #5: Fix Bugs and Ensure Application Runs
+
 ```markdown
 **Title**: fix: Debug and fix compilation/runtime errors
 
@@ -135,6 +147,7 @@ Create comprehensive documentation of CFG, Cyclomatic Complexity, and Test Paths
 Identify and fix all bugs, compilation errors, and runtime issues to ensure the application runs smoothly.
 
 **Tasks**:
+
 - [ ] Fix compilation errors
 - [ ] Fix database connection issues
 - [ ] Test all CRUD operations
@@ -144,6 +157,7 @@ Identify and fix all bugs, compilation errors, and runtime issues to ensure the 
 - [ ] Fix any logical errors found during testing
 
 **Testing Checklist**:
+
 - [ ] Application starts without errors
 - [ ] Can create new document
 - [ ] Can import existing file
@@ -160,7 +174,8 @@ Identify and fix all bugs, compilation errors, and runtime issues to ensure the 
 
 ### Example Workflow
 
-1. **Create Issue**: 
+1. **Create Issue**:
+
    ```
    Issue #6: "feat: Implement Auto-Save JUnit test for >500 words"
    ```
@@ -170,11 +185,13 @@ Identify and fix all bugs, compilation errors, and runtime issues to ensure the 
    - Move to "In Progress" column in Project board
 
 3. **Create Feature Branch**:
+
    ```bash
    git checkout -b feature/autosave-test-6
    ```
 
 4. **Write code and commit**:
+
    ```bash
    git add Testing/presentation/AutoSaveTest.java
    git commit -m "test: Add Auto-Save JUnit tests for word count threshold #6"
@@ -210,6 +227,7 @@ Follow **Conventional Commits** format:
 ```
 
 ### Types:
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
@@ -219,6 +237,7 @@ Follow **Conventional Commits** format:
 - `style`: Code formatting
 
 ### Examples:
+
 ```bash
 git commit -m "feat(business): Add FacadeBO test suite #1"
 git commit -m "fix(data): Fix database connection timeout issue #5"
@@ -236,23 +255,28 @@ When creating a Pull Request, use this template:
 
 ```markdown
 ## Description
+
 Brief description of what this PR does.
 
 ## Related Issue
+
 Closes #<issue-number>
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Tests
 - [ ] Documentation
 
 ## Testing Done
+
 - [ ] Unit tests pass
 - [ ] Manual testing completed
 - [ ] No new warnings or errors
 
 ## Checklist
+
 - [ ] Code follows project conventions
 - [ ] Tests added/updated
 - [ ] Documentation updated
@@ -309,17 +333,19 @@ Create milestones to track progress:
 ✅ Issues assigned and labeled properly  
 ✅ Commit messages reference issue numbers  
 ✅ Pull Request workflow documented  
-✅ Branch naming convention established  
+✅ Branch naming convention established
 
 ---
 
-**Next Steps**: 
+**Next Steps**:
+
 1. Go to GitHub and create the Project board
 2. Create all 5 issues listed above
 3. Move issues to appropriate columns
 4. Start working on highest priority issue
 
 **Remember**: Every code change should:
+
 1. Start with an Issue
 2. Be done in a feature branch
 3. Have commits referencing the issue
